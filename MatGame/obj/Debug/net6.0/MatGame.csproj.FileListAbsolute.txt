@@ -2,7 +2,6 @@ C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\MatGame.exe
 C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\MatGame.deps.json
 C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\MatGame.runtimeconfig.json
 C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\MatGame.dll
-C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\ref\MatGame.dll
 C:\Users\danya\RiderProjects\MatGame\MatGame\bin\Debug\net6.0\MatGame.pdb
 C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\MatGame.csproj.AssemblyReference.cache
 C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\MatGame.GeneratedMSBuildEditorConfig.editorconfig
@@ -13,3 +12,4 @@ C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\MatGame.dll
 C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\ref\MatGame.dll
 C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\MatGame.pdb
 C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\MatGame.genruntimeconfig.cache
+C:\Users\danya\RiderProjects\MatGame\MatGame\obj\Debug\net6.0\refint\MatGame.dll

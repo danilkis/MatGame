@@ -17,56 +17,55 @@ if (N > 10 && N < 2)
 int i, j;
 int[,] matrix = new int[N, M];
 
-for (int o = 0; o < M; o++) {
+List<int> row = new List<int>();
+List<int> col = new List<int>();
+List<int> price1 = new List<int>();
+List<int> price2 = new List<int>();
+for (int o = 0; o < M; o++)
+{
     for (int p = 0; p < N; p++)
     {
         Random rnd = new Random();
-        int rand_num  = rnd.Next(2, 12);
-        matrix[o,p] = rand_num;
-        Console.Write(matrix[o,p].ToString() + " ");
+        int rand_num = rnd.Next(2, 12);
+        matrix[p, o] = rand_num;
+        Console.Write(matrix[p, o].ToString() + "\t");
+        row.Add(matrix[p, o]);
+        if (p == N - 1)
+        {
+            price1.Add(row.Min());
+            Console.Write("\t" + "|" + row.Min());
+            row.Clear();
+        }
     }
+
     Console.WriteLine();
+    if (o == M - 1)
+    {
+        Console.WriteLine(new string('-', N * 7));
+        int max = 0;
+        List<int> column = new List<int>();
+        for (int y = 0; y < N; y++)
+        {
+            for (int z = 0; z < M; z++)
+            {
+               column.Add(matrix[y,z]);
+            }
+            Console.Write(column.Max() + "\t");
+            price2.Add(column.Max());
+            column.Clear();
+        }
+    }
 }
+
 Console.WriteLine("\nМинимальное значение в строках: ");
-List<int> price1 = new List<int>();
-List<int> price2 = new List<int>();
-for (int k = 0; k < M; k++)
-{
-    int minLine = matrix[k, 0];
-    for (int q = 0; q < N; q++)
-    {
-        if (matrix[k, q] < minLine)
-        {
-            minLine = matrix[k, q];
-        }                   
-    }
-    Console.WriteLine("Строка {0}, значение: {1}", k, minLine);
-    price1.Add(minLine);
-    Console.WriteLine();
-}
-for (int k = 0; k < M; k++)
-{
-    int maxcol = matrix[0, k];
-    for (int q = 0; q < N; q++)
-    {
-        if (matrix[q, k] > maxcol)
-        {
-            maxcol = matrix[q, k];
-        }                   
-    }
-    Console.WriteLine("Столбец {0}, значение: {1}", k, maxcol);
-    price2.Add(maxcol);
-    Console.WriteLine();
-}
-Console.WriteLine("Нижняя цена "+ price1.Max());
-Console.WriteLine("Верхняя цена "+ price2.Min());
+Console.WriteLine("Нижняя цена: "+ price1.Max());
+Console.WriteLine("Верхняя цена: "+ price2.Min());
 
 if (price1.Max() == price2.Min())
 {
     Console.WriteLine("Чистые стратегии есть");
 } else
 {
-    Console.WriteLine("Чистых стратегий не существует");
+    Console.WriteLine("Решения игры в чистых стратегиях не существует!");
 }
-
 return 0;

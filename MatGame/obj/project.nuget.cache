@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "zJ4QOnn+9BZtY6csQFBAOEDdDsl1xUlgvAeWATbakGN+FB5aW9nUyoVVqfjIEOmLPvtQgcFNFnIfeC70RuF0vQ==",
+  "dgSpecHash": "acSqXsvFIoFDg7wgIO/wwPwQvFstG3qc2T7jNi5vr98eByzttxvIJmZ4eKVhfJYA8MwR6IO64jWv2pLznwgf1g==",
   "success": true,
   "projectFilePath": "C:\\Users\\danya\\RiderProjects\\MatGame\\MatGame\\MatGame.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\danya\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.11\\microsoft.netcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\danya\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.11\\microsoft.windowsdesktop.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\danya\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.11\\microsoft.aspnetcore.app.ref.6.0.11.nupkg.sha512",
+    "C:\\Users\\danya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.11\\microsoft.netcore.app.host.win-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
